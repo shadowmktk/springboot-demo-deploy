@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: springboot-demo
+  name: springboot-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-demo
+  template:
+    metadata:
+      labels:
+        app: springboot-demo
+    spec:
+      containers:
+        - image: registry.cn-hangzhou.aliyuncs.com/kubernetesz/springboot-demo:v1.0.0
+          imagePullPolicy: Always
+          name: springboot-demo
+          ports:
+            - containerPort: 8080
+              protocol: TCP

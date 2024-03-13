@@ -1,0 +1,5 @@
+commonLabels:
+  app: springboot-demo
+resources:
+- deploy.yaml
+- svc.yaml
