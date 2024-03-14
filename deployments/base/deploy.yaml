@@ -15,7 +15,7 @@ spec:
         app: springboot-demo
     spec:
       containers:
-        - image: registry.cn-hangzhou.aliyuncs.com/kubernetesz/springboot-demo:v1.0.5
+        - image: registry.cn-hangzhou.aliyuncs.com/kubernetesz/springboot-demo:04c5fa70e2a72ab3e0e7a5173509c187935abdf5
           imagePullPolicy: Always
           name: springboot-demo
           ports:
